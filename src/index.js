@@ -7,10 +7,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {LoginComponent} from './components/login/login.component';
 import { NetflixIndex } from './netflix/netflix-index/netflix-index';
+import { DataBindingComponent } from './components/login/data binding/data-bindingObject.component';
+import { DataBinding2Component } from './components/login/data binding/data-bindingArray.component';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <NetflixIndex />
+    <DataBinding2Component />
   </React.StrictMode>
 );
 
