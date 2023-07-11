@@ -1,0 +1,12 @@
+.brand-title{
+    font-size: 30px;
+    font-family: Arial;
+    color: red;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.header{
+    display: flex ;
+    justify-content: space-between;
+    padding: 30px;
+}
