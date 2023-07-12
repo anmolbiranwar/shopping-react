@@ -38,6 +38,21 @@ export function DataBinding4Component()
                         )
                 }
             </select>
+            <h2>Select Category</h2>
+            {
+                menu.map(item=>
+                    <details key={item.Category}>
+                        <summary>{item.Category}</summary>
+                        <ul>
+                           {
+                             item.Product.map(product=>
+                                <li key={product}>{product}</li>
+                                )
+                           }
+                        </ul>
+                    </details>
+                    )
+            }
         </div>
     )
 }
