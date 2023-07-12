@@ -9,10 +9,12 @@ import {LoginComponent} from './components/login/login.component';
 import { NetflixIndex } from './netflix/netflix-index/netflix-index';
 import { DataBindingComponent } from './components/login/data binding/data-bindingObject.component';
 import { DataBinding2Component } from './components/login/data binding/data-bindingArray.component';
+import { Databinding3Component } from './components/login/data binding/data-bindingArrayOfObjects.component';
+import { DataBinding4Component } from './components/login/data binding/data-bindingNestedData.component';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <DataBinding2Component />
+    <DataBinding4Component />
   </React.StrictMode>
 );
 
