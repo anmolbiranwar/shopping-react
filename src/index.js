@@ -11,10 +11,11 @@ import { DataBindingComponent } from './components/login/data binding/data-bindi
 import { DataBinding2Component } from './components/login/data binding/data-bindingArray.component';
 import { Databinding3Component } from './components/login/data binding/data-bindingArrayOfObjects.component';
 import { DataBinding4Component } from './components/login/data binding/data-bindingNestedData.component';
+import { DataBinding5Component } from './components/login/data binding/dta-bindingBootstrapCards.component';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <DataBinding4Component />
+    <DataBinding5Component />
   </React.StrictMode>
 );
 
