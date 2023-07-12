@@ -24,6 +24,20 @@ export function DataBinding4Component()
                         )
                 }
             </ol>
+            <h2>Select Product</h2>
+            <select>
+                {
+                    menu.map(item=>
+                        <optgroup label={item.Category} key={item.Category}>
+                            {
+                                item.Product.map(product=>
+                                    <option key={product}>{product}</option>
+                                    )
+                            }
+                        </optgroup>
+                        )
+                }
+            </select>
         </div>
     )
 }
