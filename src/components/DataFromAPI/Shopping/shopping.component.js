@@ -25,7 +25,11 @@ export function ShoppingComponent()
     },[]);
 
     function handleCategoryChanged(e){
-        LoadProducts(`http://fakestoreapi.com/products/category/${e.target.value}`);
+        if(e.target.value=="all"){
+            LoadProducts("http://fakestoreapi.com/products");
+        }else{
+            LoadProducts(`http://fakestoreapi.com/products/category/${e.target.value}`);
+        }
     }
     return(
         <div className="container-fluid">
@@ -47,6 +51,20 @@ export function ShoppingComponent()
                                 }
                             </select>
                         </div>
+                    </div>
+                    <div className="mt-3">
+                                <label className="form-label">Choose Category</label>
+                                <div>
+                                    <ul className="list-unstyled">
+                                        {
+                                            categories.map(category=>
+                                                <li key={category}>
+                                                    <input type="radio" name="category" value={category} /> {category.toUpperCase()}
+                                                </li>
+                                                )
+                                        }
+                                    </ul>
+                                </div>
                     </div>
                 </nav>
                 <main className="col-8 d-flex flex-wrap">
