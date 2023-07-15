@@ -24,7 +24,7 @@ export function NasaComponent1()
                   <div className="d-flex flex-wrap">
                     {
                         mars.map(item=>
-                            <div className="card m-2 p-2" id="card">
+                            <div  key={item.id} className="card m-2 p-2" id="card">
                                 <img src={item.img_src} className="card-img-top" height="200"></img>
                                 <div className="card-body">
                                     <dl>
