@@ -30,6 +30,20 @@ export function NasaComponent()
                     <th>Rover</th>
                 </tr>
             </thead>
+            <tbody>
+                {
+                    mars.map(item=>
+                        <tr>
+                            <td>{item.id}</td>
+                            <td>
+                                <img src={item.img_src} width="100" height="100"></img>
+                            </td>
+                            <td>{item.camera.full_name}</td>
+                            <td>{item.rover.name}</td>
+                        </tr>
+                        )
+                }
+            </tbody>
             </table>
         </div>
 
