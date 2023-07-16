@@ -59,7 +59,7 @@ export function ShoppingComponent()
                                         {
                                             categories.map(category=>
                                                 <li key={category}>
-                                                    <input type="radio" name="category" value={category} /> {category.toUpperCase()}
+                                                    <input type="radio" onChange={handleCategoryChanged} name="category" value={category} /> {category.toUpperCase()}
                                                 </li>
                                                 )
                                         }
