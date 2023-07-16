@@ -18,10 +18,11 @@ import { NasaComponent } from './components/DataFromAPI/Nasa.component';
 import { NasaComponent1 } from './components/DataFromAPI/Nasa.Component.card';
 import { ShoppingComponent } from './components/DataFromAPI/Shopping/shopping.component';
 import { StyleDemoComponent } from './components/StyleBinding/styledemo.component';
+import { StyleDemo1Component } from './components/StyleBinding/styledemo1.component';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <StyleDemoComponent />
+    <StyleDemo1Component />
   </React.StrictMode>
 );
 
