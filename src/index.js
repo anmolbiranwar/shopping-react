@@ -17,10 +17,11 @@ import { TwowayDataBinding1 } from './components/Twoway Data Binding/TwowayDataB
 import { NasaComponent } from './components/DataFromAPI/Nasa.component';
 import { NasaComponent1 } from './components/DataFromAPI/Nasa.Component.card';
 import { ShoppingComponent } from './components/DataFromAPI/Shopping/shopping.component';
+import { StyleDemoComponent } from './components/StyleBinding/styledemo.component';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ShoppingComponent />
+    <StyleDemoComponent />
   </React.StrictMode>
 );
 
