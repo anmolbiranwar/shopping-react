@@ -19,10 +19,11 @@ import { NasaComponent1 } from './components/DataFromAPI/Nasa.Component.card';
 import { ShoppingComponent } from './components/DataFromAPI/Shopping/shopping.component';
 import { StyleDemoComponent } from './components/StyleBinding/styledemo.component';
 import { StyleDemo1Component } from './components/StyleBinding/styledemo1.component';
+import { ClassBindingDemo } from './components/Class Binding/classdemo.component';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <StyleDemo1Component />
+    <ClassBindingDemo />
   </React.StrictMode>
 );
 
