@@ -68,7 +68,11 @@ export function FormValidationComponent()
         }else{
             setMobileError("Invalid Mobile: +91 and 10 digits");
         }
-       
+        if(userDetails.City=="-1"){
+            setCityError("Please Select Your City");
+        }else{
+            setCityError("");
+        }
     }
      
     return(
