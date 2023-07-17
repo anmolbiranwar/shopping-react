@@ -20,10 +20,11 @@ import { ShoppingComponent } from './components/DataFromAPI/Shopping/shopping.co
 import { StyleDemoComponent } from './components/StyleBinding/styledemo.component';
 import { StyleDemo1Component } from './components/StyleBinding/styledemo1.component';
 import { ClassBindingDemo } from './components/Class Binding/classdemo.component';
+import { FormValidationComponent } from './components/Form Validation/formvalidation.component';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ClassBindingDemo />
+    <FormValidationComponent />
   </React.StrictMode>
 );
 
