@@ -30,7 +30,8 @@ export function FormikValidation()
         <form>
             <dl>
                 <dt>User Name</dt>
-                <dd><input name="UserName" type="text"/></dd>
+                <dd><input name="UserName" {...formik.getFieldProps("UserName")} type="text"/></dd>
+                <dd className="text-danger">{formik.errors.UserName}</dd>
                 <dt>Age</dt>
                 <dd><input name="Age" type="text"/></dd>
                 <dt>Mobile</dt>
