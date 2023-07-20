@@ -19,9 +19,10 @@ export function FormikValidation()
             Mobile: yup.string()
             .required("Mobile Required")
             .matches(/\+91\d{10}/,"Invalid Mobile +91 and 10 digits")
-            
-
-        })
+        }),
+        onSubmit:(values)=>{
+            alert(JSON.stringify(values));
+        }
     })
     return(
         <div className="container-fluid">
