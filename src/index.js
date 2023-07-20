@@ -21,10 +21,11 @@ import { StyleDemoComponent } from './components/StyleBinding/styledemo.componen
 import { StyleDemo1Component } from './components/StyleBinding/styledemo1.component';
 import { ClassBindingDemo } from './components/Class Binding/classdemo.component';
 import { FormValidationComponent } from './components/Form Validation/formvalidation.component';
+import { FormikValidation } from './components/Form Validation/formik-validation.component';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <FormValidationComponent />
+    <FormikValidation />
   </React.StrictMode>
 );
 
