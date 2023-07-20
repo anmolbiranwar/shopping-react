@@ -27,15 +27,17 @@ export function FormikValidation()
     return(
         <div className="container-fluid">
             <h2>Register</h2>
-        <form>
+        <form onSubmit={formik.handleSubmit}>
             <dl>
                 <dt>User Name</dt>
                 <dd><input name="UserName" {...formik.getFieldProps("UserName")} type="text"/></dd>
                 <dd className="text-danger">{formik.errors.UserName}</dd>
                 <dt>Age</dt>
-                <dd><input name="Age" type="text"/></dd>
+                <dd><input name="Age" {...formik.getFieldProps("Age")} type="text"/></dd>
+                <dd className="text-danger">{formik.errors.Age}</dd>
                 <dt>Mobile</dt>
-                <dd><input name="Mobile" type="text"/></dd>
+                <dd><input name="Mobile" {...formik.getFieldProps("Mobile")} type="text"/></dd>
+                <dd className="text-danger">{formik.errors.Mobile}</dd>
             </dl>
             <button>Register</button>
         </form>
