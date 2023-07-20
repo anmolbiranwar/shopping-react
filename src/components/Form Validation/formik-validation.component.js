@@ -30,11 +30,11 @@ export function FormikValidation()
         <form>
             <dl>
                 <dt>User Name</dt>
-                <dd><input type="text"/></dd>
+                <dd><input name="UserName" type="text"/></dd>
                 <dt>Age</dt>
-                <dd><input type="text"/></dd>
+                <dd><input name="Age" type="text"/></dd>
                 <dt>Mobile</dt>
-                <dd><input type="text"/></dd>
+                <dd><input name="Mobile" type="text"/></dd>
             </dl>
             <button>Register</button>
         </form>
